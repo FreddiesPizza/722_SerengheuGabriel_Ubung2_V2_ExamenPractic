@@ -27,12 +27,14 @@ public class Controller {
         lager.create(newProdukt);
     }
 
-    public void updateProdukt(){
-
+    public void updateProdukt(String name,int preis, String sku, int anz){
+        Produkt updatedProdukt = new Produkt(name, preis, sku, anz);
+        lager.update(updatedProdukt);
     }
 
-    public void deleteProdukt(){
-
+    public void deleteProdukt(String name,int preis, String sku, int anz){
+        Produkt deleteProdukt = new Produkt(name, preis, sku, anz);
+        lager.delete(deleteProdukt);
     }
 
 }
