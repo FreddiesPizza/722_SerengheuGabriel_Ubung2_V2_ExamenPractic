@@ -1,9 +1,17 @@
 package ConsoleView;
 
+import Controller.Controller;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ConsoleView {
+
+    private Controller controller;
+
+    public ConsoleView(Controller controller) {
+        this.controller = controller;
+    }
 
     public void Run(Controller controller) {
         Scanner scanner = new Scanner(System.in);
