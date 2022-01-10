@@ -10,6 +10,9 @@ public class Lager extends InMemoryRepository<Produkt> {
     private Date datum;
     private List<Produkt> produkte;
 
+    public Lager() {
+    }
+
     public Lager(Date datum, List<Produkt> produkte) {
         this.datum = datum;
         this.produkte = produkte;
